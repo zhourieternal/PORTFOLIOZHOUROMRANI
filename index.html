@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de créations de fleurs éternelles faites à la main">
+  <title>Portfolio - Fleurs Eternelles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Fleurs Eternelles - Créations Artisanales
+      <h1>fleurs faite à la main</h1>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about us">À Propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="section">
+    <div class="container">
+      <h2>Bienvenue dans l'univers des fleurs éternelles</h2>
+      <p>Des créations artisanales qui embellissent votre intérieur pour toute la vie.</p>
+      <img src="C:\Users\zhoro\Desktop\votre-projet\OUVERTURE.jpg" alt="Fleurs éternelles" class="Fleurs éternelles"class="image-droite">
+    </div>
+  </section
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio Zhouri</h2>
+      <p>Des créations uniques pour toutes les occasions</p>
+
+      <!-- Filtrage par catégorie -->
+      <div class="categories">
+        <button class="category-btn" onclick="filterPortfolio('all')">Toutes</button>
+        <button class="category-btn" onclick="filterPortfolio('mariage')">Mariage</button>
+        <button class="category-btn" onclick="filterPortfolio('anniversaire')">Anniversaire</button>
+        <button class="category-btn" onclick="filterPortfolio('bouquet de graduation')">Bouquet de Graduation</button>
+        <button class="category-btn" onclick="filterPortfolio('bouquet de main')">Bouquet de Main</button>
+        <button class="category-btn" onclick="filterPortfolio('new baby')">New Baby</button>
+        <button class="category-btn" onclick="filterPortfolio('decoration')">Décoration</button>
+        <button class="category-btn" onclick="filterPortfolio('autre')">Autres</button>
+      </div>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>À propos de mes créations</h2>
+          <p>Nos fleurs ne fanent jamais, idéales pour toutes les occasions. Nos fleurs ajoutent une touche d'amour et de raffinement à votre espace. Que ce soit pour un mariage, un anniversaire, ou simplement pour vous faire plaisir, elles sont le cadeau parfait !</p>
+          <p>Je crée des fleurs éternelles faites à la main pour toutes les occasions spéciales. Que ce soit pour un mariage, un anniversaire, ou simplement pour décorer votre maison, chaque création est conçue avec soin pour apporter beauté et émotion. Mes fleurs sont fabriquées à partir de matériaux de qualité, afin qu'elles conservent leur beauté pendant des années.</p>
+          <p>Quelques exemples d'occasions pour lesquelles mes fleurs peuvent être utilisées :</p>
+          <ul>
+            <li><strong>Mariages</strong> : Bouquets, décorations de table, arrangements floraux pour la cérémonie.</li>
+            <li><strong>Anniversaires</strong> : Bouquets personnalisés, compositions uniques pour un cadeau mémorable.</li>
+            <li><strong>Décoration intérieure</strong> : Plantes et fleurs en décoration pour une ambiance naturelle et élégante.</li>
+            <li><strong>Fêtes et événements</strong> : Arrangements floraux pour tous types d'événements.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Galerie filtrable -->
+      <div class="portfolio-gallery" id="portfolio-gallery">
+        <!-- Section Mariage -->
+        <div class="portfolio-item mariage">
+          <img src="C:\Users\zhoro\Desktop\votre-projet\Box fiançailles.jpeg.jpeg" alt="Fleur mariage">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\mariage_fleur4.jpg.jpg" alt="Fleur mariage">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\mariage_fleur11.jpg.jpeg" alt="Fleur mariage">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\mariage_fleur8.jpg.jpeg" alt="Fleur mariage">
+          <p>Création pour mariage et fiançailles</p>
+        </div>
+
+        <!-- Section Anniversaire -->
+        <div class="portfolio-item anniversaire">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\anniversaire_fleur7.jpg.jpg" alt="Fleur pour anniversaire">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\PHOTO ANNIV anniversaire_fleur1.jpg.jpg" alt="Fleur pour anniversaire">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\anniversaire_fleur2.jpg.jpeg" alt="Fleur pour anniversaire">
+          <p>Fleurs pour anniversaire</p>
+        </div>
+
+        <!-- Section Graduation -->
+        <div class="portfolio-item bouquet-de-graduation">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\graduation_fleur4.jpg.jpg" alt="Fleur graduation">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\graduation_fleur2.jpg.jpeg" alt="Fleur graduation">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\autre_fleur5.jpg.png" alt="Fleur graduation">
+          <p>Fleurs pour graduation</p>
+        </div>
+
+        <!-- Section Bouquet de Main -->
+        <div class="portfolio-item bouquet-de-main">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\IMG_20240629_150401-Photoroom.jpg" alt="Bouquet de main">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\IMG-20241115-WA0002(1).jpg" alt="Bouquet de main">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\WhatsApp Image 2024-11-18 at 12.58.05.jpeg" alt="Bouquet de main">
+          <p>Création pour toutes les occasions</p>
+        </div>
+
+        <!-- Section New Baby -->
+        <div class="portfolio-item new-baby">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\New Baby_fleur1.jpg.jpg" alt="New Baby">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\New Baby_fleur5.jpg.jpg" alt="New Baby">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\visite de patien.jpeg" alt="New Baby">
+          <p>Création pour les nouveaux nés</p>
+        </div>
+
+        <!-- Section Décoration -->
+        <div class="portfolio-item decoration">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\decoration_fleur1.jpg.png" alt="Fleur décoration intérieure">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\Bouquet de main_fleur5.jpg.jpg" alt="Fleur décoration intérieure">
+          
+          <p>Décoration florale</p>
+        </div>
+
+        <!-- Section Autres -->
+        <div class="portfolio-item autre">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\autre_fleur1.jpg.jpeg" alt="Autre création florale">
+          <img src="c:\Users\zhoro\Desktop\votre-projet\autre_fleur2.jpg.jpeg" alt="Autre création florale">
+          <p>Autres occasions</p>
+        </div>
+      </div>
+    <!-- A PROPOS DE MOI -->
+  <section id="about us" class="section">
+    <div class="container">
+      <h2>about us</h2>
+      <p>ZHOR OMRANI</p>
+      <h2> À propos de moi</h2>
+      Bonjour ! Je m'appelle Zhor OMRANI, j'ai 32 ans et je suis une passionnée de créativité et d'artisanat. Titulaire d'un Bac+2 en commerce, je travaille en tant que gestionnaire administratif dans un établissement, où j'ai acquis une solide expérience dans la gestion et l'organisation.
+      
+      Cependant, au-delà de mon rôle administratif, j'ai toujours été attirée par le monde de la création, en particulier l'art floral et le graphisme. C'est ainsi qu'est née ma petite marque de fleurs éternelles, un projet que je gère en parallèle de mon travail. Je crée des compositions florales uniques, fabriquées à la main, et destinées à embellir l'intérieur de mes clients de manière durable.
+      
+      Mon entreprise est née d'une volonté de mêler deux passions : l'art du graphisme et l'art floral. J'utilise mes compétences en création visuelle pour concevoir des visuels attractifs, des vidéos captivantes et des articles qui mettent en valeur mes créations florales. Que ce soit pour la gestion de mes produits ou pour leur présentation, chaque détail est pensé pour offrir à mes clients une expérience unique et mémorable.
+      
+      En plus de mes compétences en gestion et en création, je suis une personne dynamique, organisée, et toujours à la recherche de nouvelles opportunités pour apprendre et évoluer dans mon domaine. L'art, qu'il soit floral ou graphique, est pour moi une manière de m'exprimer et de partager ma vision avec le monde
+      
+      <li><strong></strong><h2>Points forts :</h2></strong>
+      
+      Formation et expérience en commerce : Bac+2 en commerce, avec une expérience solide en gestion administrative et organisation.
+      Passion pour la création florale : Création de fleurs éternelles faites à la main, un produit unique et personnalisé pour chaque client.
+      Compétences en graphisme et vidéo : Conception de visuels attractifs et de vidéos créatives pour mettre en valeur mes créations.
+      Polyvalence : Gestion d'une petite entreprise en parallèle de mon travail en entreprise, alliant créativité, gestion et organisation.
+      Ce que je propose :
+      Créations florales personnalisées : Des compositions de fleurs éternelles adaptées à toutes les occasions.
+      Design graphique : Création de supports visuels pour des projets créatifs, y compris des vidéos promotionnelles.
+      Accompagnement personnalisé : Une écoute attentive et un service sur mesure pour chaque client.
+      Mon objectif :
+      Mettre à profit mes compétences en gestion, en artisanat et en création visuelle pour continuer à faire évoluer ma marque de fleurs éternelles, tout en développant mes compétences dans les domaines du graphisme et de la création vidéo. Je suis toujours ouverte à de nouvelles collaborations, à l'apprentissage de nouvelles techniques, et à partager ma passion avec une communauté grandissante.
+      
+      
+      <p>ZHOR OMRANI</p>
+      </div>
+         
+      <!-- Section Shop -->
+      <div class="portfolio-item autre">
+        <img src="c:\Users\zhoro\Desktop\votre-projet\CATALOGUE DES ARTICLES.png" alt="CATALOGUE">
+        <img src="c:\Users\zhoro\Desktop\votre-projet\NOS TARIF DES FLEURS.png" alt="CATALOGUE">
+        <p>Zhouri Shop</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- contact NOUS -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>N'hesitez pas à nous contacter au N +212698465186</h2>
+  
+</body>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <p>&copy; 2024 Zhouri Eternal. Tous droits réservés.2024</p>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      <lu></lu>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li><a href="https://www.zhouri eternal.com/yourprofile" target="_blank">Facebook</a></li>
+        <li><a href="https://www.zhouri eternal.com/yourprofile" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</html>
+
